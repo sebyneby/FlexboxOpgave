@@ -1,0 +1,156 @@
+* {
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.grå-boks {
+    text-align: center;
+    height: auto;
+    width: 90%;
+    border: 1px black solid;
+    background-color: rgb(179, 179, 179);
+    margin: 0.5%;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.top-bar {
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    display: flex;
+}
+
+.logo, .nav {
+    align-items: center;
+    display: flex;
+    border: 1px black solid;
+    height: 20px;
+    padding: 0 2%;
+}
+
+.logo {
+    background-color: rgb(55, 0, 255);
+    margin-left: 10px;
+}
+
+.nav {
+    background-color: rgb(255, 0, 0);
+    margin-right: 10px;
+}
+
+.boks {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.tilbud {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    height: 200px;
+}
+
+.tilbud1, .tilbud2, .tilbud3 {
+    align-items: center;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.tilbud1 {
+    background-color: rgb(255, 0, 111);
+    flex-grow: 2;
+    height: 60px;
+}
+
+.tilbud2 {
+    background-color: rgb(0, 94, 255);
+    flex-grow: 3;
+    height: 100px;
+}
+
+.tilbud3 {
+    background-color: rgb(123, 0, 255);
+    flex-grow: 4;
+    height: 150px;
+}
+
+.proces {
+    align-items: center;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    height: 10px;
+    justify-content: center;
+}
+
+@media (min-width:1100px) {
+    body {
+        display: block;
+    }
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container > * {
+        flex-grow: 1;
+    }
+
+    .top-bar {
+        height: 60px;
+        order: 0;
+    }
+
+    .nav {
+        width: 20%;
+    }
+
+    .tilbud1, .tilbud2, .tilbud3 {
+        margin: 0 4%;
+    }
+
+    .boks {
+        height: 400px;
+        order: 1;
+        width: 40%;
+    }
+
+    .proces {
+        height: 400px;
+        order: 2;
+        width: 40%;
+    }
+
+    .tilbud {
+        display: flex;
+        flex-direction: row-reverse;
+        order: 3;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 4;
+        height:
+    }
